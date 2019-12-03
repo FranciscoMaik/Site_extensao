@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="shortcut icon" href="/images/logosite.ico" type="image/x-icon" />
+</head>
+<body>
+    <div class="grid">
+
+        <header class="grid-item">
+            <div class="flex">
+                <div class="logo">
+                    <span>HealthCAD</span>
+                </div>
+                <div class="buttonsair">
+                    <span><a href="#">SAIR</a></span>
+                </div>
+            </div>
+        </header>
+
+        <article class="grid-item">
+            <div id="entrada">
+                <h1>CADASTRO DE MÉDICO</h1>
+            </div>
+            <div class="card">
+                <form action=" " method="GET" enctype="multipart/form-data">
+                        <label>Nome</label>
+                        <input type="text"  placeholder="Digite o Nome"  name="nomemedico" required>
+                      
+                        <label>CRM</label>
+                        <input type="text"  placeholder="Digite o CRM"  name="crm" required>
+                        
+                        <label >Especialidade</label>
+                        <input type="text" name="especialidade" placeholder="Digite a Especialidade do Médico" required>
+                       
+                        <label>CPF</label>
+                        <input type="text"name="cpf" placeholder="Digite o CPF do Médico" required>
+                        <br>
+                        <label for="">Salario</label>
+                        <input type="number" name="salario" step="0.05" placeholder="Digite o Salário do Médico" required>
+                       
+                       <button>Cadatrar</button>
+                    <!-- <input type="submit" value="Cadastrar"> -->
+            </form>
+        </div>
+        </article>
+        
+        <aside class="grid-item" id="menuoculto">
+            <ul>
+                <li><h1>GERAL</h1></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cadastrodepacientes.html">Cadastrar Paciênte</a></li>
+                <li><a href="listapaciente.html">Paciêntes</a></li>
+                <li><a href="cadastrodemedico.html">Cadastrar Médico</a></li>
+                <li><a href="listademedicos.html">Médicos</a></li>
+                <li><a href="cadastrodeatendimento.html">Cadastrar Atendimento</a></li>
+            </ul>
+        </aside>
+
+        <footer class="grid-item"><a href="#"> TODOS OS DIREITOS RESERVADOS - 2019</a></footer>
+    </div>
+</body>
+</html>

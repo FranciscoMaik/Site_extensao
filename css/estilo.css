@@ -1,0 +1,159 @@
+*{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    grid-area: menu;
+    background-color:#000000;
+    padding: 20px;;
+}
+
+header .flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.buttonsair{
+    margin-right: 50PX;
+    
+}
+
+span{
+     text-align: left;
+     display: inline;
+     color: white;
+     font-weight: bold;
+     font-size: 28px;
+}
+
+.buttonsair a{
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #383A40;
+    color: #fffafa;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+}
+
+.buttonsair a:hover{
+    cursor: pointer;
+    background-color:#82826D;
+
+}
+
+
+article{
+    grid-area: post;
+    line-height: 50px;
+    background-color: #fffafa;
+    min-height: 78vh;
+}
+
+article h1{
+    padding: 5px;
+    text-align: justify;
+    font-size: 28px;
+}
+
+article p{
+    margin-left: 10px;
+    text-align: justify;
+}
+
+#entrada{
+    padding: 80px;
+}
+
+aside{
+    grid-area: submenu;
+    background-color:#000000;
+    color:#383A40;
+    text-align: center;
+    height: 100%;
+}
+
+aside ul li{
+    list-style: none;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff; 
+}
+
+aside ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+}
+
+aside a:hover{
+    color: #82826D;
+    font-weight: bold;
+}
+
+footer{
+    grid-area: rodape;
+    background-color:#000000;
+    text-align: center;
+    padding: 50px;
+}
+footer a{
+    text-align: center;
+    margin-top: auto;
+    text-decoration: none;
+    color: #ffffff;
+}
+footer a:hover{
+    color:#82826D;
+    font-weight: bold;
+}
+
+table{
+    margin-top: 30px;
+    border-collapse: collapse;
+    color: #383A40;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform.2s;
+}
+table tr th, td{
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+}
+
+table tr td div span{
+    margin: 0px auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    grid-auto-rows:minmax(50px, auto);
+    grid-template-areas:
+    "menu menu "
+    "post submenu"
+    "post submenu"
+    "rodape rodape";
+}
+
+#buttonbuscar{
+    color: #ffffff;
+    background-color: #383A40;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#buttonbuscar:hover{
+    color: #ffffff;
+    background-color: #82826D;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+
+
+

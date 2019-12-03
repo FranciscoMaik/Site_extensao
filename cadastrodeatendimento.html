@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="shortcut icon" href="/images/logosite.png" type="image/x-icon" />
+</head>
+<body>
+    <div class="grid">
+
+        <header class="grid-item">
+            <div class="flex">
+                <div class="logo">
+                    <span>HealthCAD</span>
+                </div>
+                <div class="buttonsair">
+                    <span><a href="#">SAIR</a></span>
+                </div>
+            </div>
+        </header>
+
+        <article class="grid-item">
+            <div id="entrada">
+                <h1>CADASTRO DE ATENDIMENTO</h1>
+            </div>
+            <div class="card">
+                <form action=" " method="GET" enctype="multipart/form-data">
+                        <label>CLIENTE</label>
+                        <select name="cliente" id="">
+                            <option value="cliente">--ESCOLHA--</option>
+                            <option value="cliente">JOÃO JOSÉ</option>
+                            <option value="cliente">ZÉ ANTONIO</option>
+                            <option value="cliente">PEDRO SOBRINHO</option>
+                        </select>
+                        <br>
+                        <label>MÉDICO</label>
+                        <select name="cliente" id="">
+                            <option value="cliente">--ESCOLHA--</option>
+                            <option value="cliente">DR. JOÃO JOSÉ</option>
+                            <option value="cliente">DR. ZÉ ANTONIO</option>
+                            <option value="cliente">DR. PEDRO SOBRINHO</option>
+                        </select>
+                        <br>
+                        <label >DATA</label>
+                        <input type="date" name="dataatendimento" placeholder="DD/MM/AAAA" required>
+                       
+                        <label>HORA</label>
+                        <input type="time" name="horadoatendimento" placeholder="HH/MM" required>
+                        <br>
+                        <label for="">Observação</label><br>
+                        <textarea name="observacao" id="" cols="87" rows="10"></textarea>
+                       
+                       <button>Cadatrar</button>
+                    <!-- <input type="submit" value="Cadastrar"> -->
+            </form>
+        </div>
+        </article>
+        
+        <aside class="grid-item" id="menuoculto">
+            <ul>
+                <li><h1>GERAL</h1></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cadastrodepacientes.html">Cadastrar Paciênte</a></li>
+                <li><a href="listapaciente.html">Paciêntes</a></li>
+                <li><a href="cadastrodemedico.html">Cadastrar Médico</a></li>
+                <li><a href="listademedicos.html">Médicos</a></li>
+                <li><a href="cadastrodeatendimento.html">Cadastrar Atendimento</a></li>
+            </ul>
+        </aside>
+
+        <footer class="grid-item"><a href="#"> TODOS OS DIREITOS RESERVADOS - 2019</a></footer>
+    </div>
+</body>
+</html>

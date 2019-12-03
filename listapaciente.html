@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="/images/logosite.ico" type="image/x-icon" />
+</head>
+<body>
+    <div class="grid">
+
+        <header class="grid-item">
+            <div class="flex">
+                <div class="logo">
+                    <span>HealthCAD</span>
+                </div>
+                <div class="buttonsair">
+                    <span><a href="#">SAIR</a></span>
+                </div>
+            </div>
+        </header>
+
+        <article class="grid-item">
+            <div id="entrada">
+                <h1>LISTA DE PACIÊNTES</h1>
+                <p> PACIÊNTES CADASTRADOS NA CLINICA</p>
+                <table border="1">
+                    <tr>
+                        <th>IDENTIFICADOR</th>
+                        <th>NOME</th>
+                        <th>CPF</th>
+                        <th>AÇÃO</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>JOÃO JOSÉ</td>
+                        <td>000.000.000-00</td>
+                        <td>
+                            <div class="buttonsair">
+                                <span><a href="#">VER</a></span>
+                                <span><a href="#">EDITAR</a></span>
+                                <span><a href="#">EXCLUIR</a></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>2</td>
+                            <td>ZÉ ANTONIO</td>
+                            <td>000.000.000-00</td>
+                            <td>
+                                <div class="buttonsair">
+                                    <span><a href="#">VER</a></span>
+                                    <span><a href="#">EDITAR</a></span>
+                                    <span><a href="#">EXCLUIR</a></span>
+                                </div>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td>3</td>
+                            <td>PEDRO SOBRINHO</td>
+                            <td>000.000.000-00</td>
+                            <td>
+                                <div class="buttonsair">
+                                    <span><a href="#">VER</a></span>
+                                    <span><a href="#">EDITAR</a></span>
+                                    <span><a href="#">EXCLUIR</a></span>
+                                </div>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td>4</td>
+                            <td>MANOEL SOUSA</td>
+                            <td>000.000.000-00</td>
+                            <td>
+                                <div class="buttonsair">
+                                    <span><a href="#">VER</a></span>
+                                    <span><a href="#">EDITAR</a></span>
+                                    <span><a href="#">EXCLUIR</a></span>
+                                </div>
+                            </td>
+                    </tr>
+                </table>
+               
+            </div>
+        </article>
+        
+        <aside class="grid-item" id="menuoculto">
+            <ul>
+                <li><h1>GERAL</h1></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cadastrodepacientes.html">Cadastrar Paciênte</a></li>
+                <li><a href="listapaciente.html">Paciêntes</a></li>
+                <li><a href="cadastrodemedico.html">Cadastrar Médico</a></li>
+                <li><a href="listademedicos.html">Médicos</a></li>
+                <li><a href="cadastrodeatendimento.html">Cadastrar Atendimento</a></li>
+            </ul>
+        </aside>
+
+        <footer class="grid-item"><a href="#"> TODOS OS DIREITOS RESERVADOS - 2019</a></footer>
+    </div>
+</body>
+</html>
